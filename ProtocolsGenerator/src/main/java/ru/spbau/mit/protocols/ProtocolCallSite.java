@@ -4,8 +4,6 @@ import java.lang.invoke.*;
 
 public class ProtocolCallSite {
     private final MethodHandles.Lookup lookup;
-    private final String name;
-    private final MethodType type;
     private final String callableName;
     private final MethodType callableType;
 
@@ -14,8 +12,6 @@ public class ProtocolCallSite {
 
     public ProtocolCallSite(MethodHandles.Lookup lookup, String name, MethodType type, String callableName, MethodType callableType) {
         this.lookup = lookup;
-        this.name = name;
-        this.type = type;
         this.callableName = callableName;
         this.callableType = callableType;
     }
@@ -29,7 +25,7 @@ public class ProtocolCallSite {
         return handle;
     }
 
-    public static CallSite getBootstrap(MethodHandles.Lookup lookup, String name, MethodType type, String callableName, MethodType callableType) throws Throwable {
+    public static CallSite getBootstrap(MethodHandles.Lookup lookup, String name, MethodType type, String callableName, MethodType callableType) {
         final ProtocolCallSite instance = new ProtocolCallSite(lookup, name, type, callableName, callableType);
         return new ConstantCallSite(MethodHandles.constant(ProtocolCallSite.class, instance));
     }

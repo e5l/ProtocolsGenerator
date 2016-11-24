@@ -1,12 +1,11 @@
 package ru.spbau.mit.protocols;
 
-import com.sun.xml.internal.bind.v2.schemagen.xmlschema.Union;
 import ru.spbau.mit.protocols.utils.UnionType;
 
 public class Protocol<I> {
-    private final Class<I> generator;
+    private final Class<?> generator;
 
-    public Protocol(Class<I> generator) {
+    public Protocol(Class<?> generator) {
         this.generator = generator;
     }
 
@@ -17,6 +16,6 @@ public class Protocol<I> {
     }
 
     public UnionType<ProtocolType, I> getInstance() throws IllegalAccessException, InstantiationException {
-        return new UnionType<ProtocolType, I>(generator.newInstance());
+        return new UnionType<>(generator.newInstance());
     }
 }

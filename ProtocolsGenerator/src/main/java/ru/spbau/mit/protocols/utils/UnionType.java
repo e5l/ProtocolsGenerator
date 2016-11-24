@@ -1,5 +1,6 @@
 package ru.spbau.mit.protocols.utils;
 
+@SuppressWarnings("unchecked")
 public class UnionType<F, S> {
     private final Object item;
 

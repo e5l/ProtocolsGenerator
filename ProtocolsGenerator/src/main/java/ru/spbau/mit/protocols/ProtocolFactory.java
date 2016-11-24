@@ -13,7 +13,7 @@ import static me.qmx.jitescript.util.CodegenUtils.*;
 public class ProtocolFactory {
     private final static String RECEIVER_NAME = "receiver";
 
-    public static <I> Protocol<I> makeGenerator(final int id, final Class<I> type) throws IllegalAccessException, InstantiationException, UnsupportedDataTypeException {
+    public static <I> Protocol<I> makeGenerator(final int id, final Class<I> type) throws UnsupportedDataTypeException {
         if (!type.isInterface()) {
             throw new WrongMethodTypeException("Type should be an interface");
         }
@@ -43,7 +43,7 @@ public class ProtocolFactory {
             }
         }.defineClass(String.format("ProtocolFactory%s%d", name, id), writer.toByteArray());
 
-        return new Protocol<I>((Class<I>) result);
+        return new Protocol<>(result);
     }
 
     private static void makeReceiver(final ClassWriter writer) {
