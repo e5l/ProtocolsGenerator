@@ -1,4 +1,4 @@
-package ru.spbau.mit.protocols;
+package ru.spbau.mit.protocols.attempt.first;
 
 import org.objectweb.asm.*;
 

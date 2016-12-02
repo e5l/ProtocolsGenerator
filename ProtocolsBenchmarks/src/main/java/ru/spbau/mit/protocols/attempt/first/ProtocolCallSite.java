@@ -1,6 +1,7 @@
-package ru.spbau.mit.protocols;
+package ru.spbau.mit.protocols.attempt.first;
 
 import java.lang.invoke.*;
+import java.lang.reflect.Method;
 
 public class ProtocolCallSite {
     private final MethodHandles.Lookup lookup;
@@ -9,6 +10,7 @@ public class ProtocolCallSite {
 
     private Class<?> cache;
     private MethodHandle handle;
+    private Method reflectMethod;
 
     public ProtocolCallSite(MethodHandles.Lookup lookup, String name, MethodType type, String callableName, MethodType callableType) {
         this.lookup = lookup;
@@ -23,6 +25,15 @@ public class ProtocolCallSite {
             handle = lookup.findVirtual(receiver.getClass(), callableName, callableType).bindTo(receiver);
         }
         return handle;
+    }
+
+    public Method getReflectMethod(Object receiver) throws NoSuchMethodException {
+        Class<?> receiverClass = receiver.getClass();
+        if (cache == null || cache != receiverClass) {
+            reflectMethod = receiverClass.getDeclaredMethod(callableName, callableType.parameterArray());
+        }
+
+        return reflectMethod;
     }
 
     public static CallSite getBootstrap(MethodHandles.Lookup lookup, String name, MethodType type, String callableName, MethodType callableType) {

@@ -1,0 +1,127 @@
+# JMH 1.16 (released 22 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.spbau.mit.protocols.benchmarks.SimpleBenchmark.directCall
+
+# Run progress: 0.00% complete, ETA 00:01:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.395 ns/op
+# Warmup Iteration   2: 0.385 ns/op
+# Warmup Iteration   3: 0.381 ns/op
+# Warmup Iteration   4: 0.382 ns/op
+# Warmup Iteration   5: 0.383 ns/op
+# Warmup Iteration   6: 0.380 ns/op
+# Warmup Iteration   7: 0.383 ns/op
+# Warmup Iteration   8: 0.381 ns/op
+# Warmup Iteration   9: 0.380 ns/op
+# Warmup Iteration  10: 0.380 ns/op
+# Warmup Iteration  11: 0.381 ns/op
+# Warmup Iteration  12: 0.392 ns/op
+# Warmup Iteration  13: 0.379 ns/op
+# Warmup Iteration  14: 0.379 ns/op
+# Warmup Iteration  15: 0.383 ns/op
+# Warmup Iteration  16: 0.387 ns/op
+# Warmup Iteration  17: 0.385 ns/op
+# Warmup Iteration  18: 0.386 ns/op
+# Warmup Iteration  19: 0.385 ns/op
+# Warmup Iteration  20: 0.382 ns/op
+Iteration   1: 0.383 ns/op
+Iteration   2: 0.387 ns/op
+Iteration   3: 0.382 ns/op
+Iteration   4: 0.383 ns/op
+Iteration   5: 0.383 ns/op
+Iteration   6: 0.382 ns/op
+Iteration   7: 0.383 ns/op
+Iteration   8: 0.383 ns/op
+Iteration   9: 0.386 ns/op
+Iteration  10: 0.386 ns/op
+Iteration  11: 0.389 ns/op
+Iteration  12: 0.385 ns/op
+Iteration  13: 0.385 ns/op
+Iteration  14: 0.388 ns/op
+Iteration  15: 0.385 ns/op
+Iteration  16: 0.385 ns/op
+Iteration  17: 0.386 ns/op
+Iteration  18: 0.386 ns/op
+Iteration  19: 0.390 ns/op
+Iteration  20: 0.387 ns/op
+
+
+Result "directCall":
+  0.385 ±(99.9%) 0.002 ns/op [Average]
+  (min, avg, max) = (0.382, 0.385, 0.390), stdev = 0.002
+  CI (99.9%): [0.383, 0.387] (assumes normal distribution)
+
+
+# JMH 1.16 (released 22 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.spbau.mit.protocols.benchmarks.SimpleBenchmark.simple
+
+# Run progress: 50.00% complete, ETA 00:00:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 2.993 ns/op
+# Warmup Iteration   2: 2.803 ns/op
+# Warmup Iteration   3: 2.532 ns/op
+# Warmup Iteration   4: 2.535 ns/op
+# Warmup Iteration   5: 2.533 ns/op
+# Warmup Iteration   6: 2.538 ns/op
+# Warmup Iteration   7: 2.533 ns/op
+# Warmup Iteration   8: 2.539 ns/op
+# Warmup Iteration   9: 2.553 ns/op
+# Warmup Iteration  10: 2.565 ns/op
+# Warmup Iteration  11: 2.551 ns/op
+# Warmup Iteration  12: 2.552 ns/op
+# Warmup Iteration  13: 2.569 ns/op
+# Warmup Iteration  14: 2.543 ns/op
+# Warmup Iteration  15: 2.549 ns/op
+# Warmup Iteration  16: 2.543 ns/op
+# Warmup Iteration  17: 2.549 ns/op
+# Warmup Iteration  18: 2.567 ns/op
+# Warmup Iteration  19: 2.534 ns/op
+# Warmup Iteration  20: 2.555 ns/op
+Iteration   1: 2.554 ns/op
+Iteration   2: 2.548 ns/op
+Iteration   3: 2.564 ns/op
+Iteration   4: 2.573 ns/op
+Iteration   5: 2.531 ns/op
+Iteration   6: 2.536 ns/op
+Iteration   7: 2.568 ns/op
+Iteration   8: 2.543 ns/op
+Iteration   9: 2.542 ns/op
+Iteration  10: 2.543 ns/op
+Iteration  11: 2.547 ns/op
+Iteration  12: 2.557 ns/op
+Iteration  13: 2.555 ns/op
+Iteration  14: 2.558 ns/op
+Iteration  15: 2.566 ns/op
+Iteration  16: 2.552 ns/op
+Iteration  17: 2.538 ns/op
+Iteration  18: 2.542 ns/op
+Iteration  19: 2.532 ns/op
+Iteration  20: 2.538 ns/op
+
+
+Result "simple":
+  2.549 ±(99.9%) 0.011 ns/op [Average]
+  (min, avg, max) = (2.531, 2.549, 2.573), stdev = 0.012
+  CI (99.9%): [2.539, 2.560] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:20
+
+Benchmark                   Mode  Cnt  Score   Error  Units
+SimpleBenchmark.directCall  avgt   20  0.385 ± 0.002  ns/op
+SimpleBenchmark.simple      avgt   20  2.549 ± 0.011  ns/op

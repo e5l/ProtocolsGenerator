@@ -1,6 +1,6 @@
-package ru.spbau.mit.protocols;
+package ru.spbau.mit.protocols.attempt.first;
 
-import ru.spbau.mit.protocols.utils.UnionType;
+import ru.spbau.mit.protocols.attempt.first.utils.UnionType;
 
 public class Protocol<I> {
     private final Class<?> generator;

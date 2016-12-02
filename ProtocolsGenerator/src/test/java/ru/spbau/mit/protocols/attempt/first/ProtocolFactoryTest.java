@@ -1,8 +1,8 @@
-package ru.spbau.mit.protocols;
+package ru.spbau.mit.protocols.attempt.first;
 
 import org.junit.Test;
-import ru.spbau.mit.protocols.helpers.SimpleIntPredicate;
-import ru.spbau.mit.protocols.helpers.SimpleRunnable;
+import ru.spbau.mit.protocols.attempt.first.helpers.SimpleIntPredicate;
+import ru.spbau.mit.protocols.attempt.first.helpers.SimpleRunnable;
 
 import java.util.function.IntPredicate;
 

@@ -1,4 +1,4 @@
-package ru.spbau.mit.protocols.helpers;
+package ru.spbau.mit.protocols.attempt.first.helpers;
 
 public class SimpleIntPredicate {
 

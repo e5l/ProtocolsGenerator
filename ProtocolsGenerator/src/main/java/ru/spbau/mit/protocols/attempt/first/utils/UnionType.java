@@ -1,4 +1,4 @@
-package ru.spbau.mit.protocols.utils;
+package ru.spbau.mit.protocols.attempt.first.utils;
 
 @SuppressWarnings("unchecked")
 public class UnionType<F, S> {
