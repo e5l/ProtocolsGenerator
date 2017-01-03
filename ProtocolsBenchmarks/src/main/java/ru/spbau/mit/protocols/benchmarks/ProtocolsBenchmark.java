@@ -12,6 +12,7 @@ import ru.spbau.mit.protocols.benchmarks.testclasses.FooClass;
 import ru.spbau.mit.protocols.benchmarks.testclasses.FooImpl;
 import ru.spbau.mit.protocols.benchmarks.testclasses.FooInterface;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
@@ -33,85 +34,61 @@ public class ProtocolsBenchmark {
     }
 
     @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
-    @OutputTimeUnit(TimeUnit.NANOSECONDS)
     public void indyClass() {
         Caller.foo(classInstance);
     }
 
     @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
-    @OutputTimeUnit(TimeUnit.NANOSECONDS)
     public void indyChild() {
         Caller.foo(childInstance);
     }
 
 //    @Benchmark
-//    @BenchmarkMode(Mode.AverageTime)
-//    @OutputTimeUnit(TimeUnit.NANOSECONDS)
 //    public void indyInterfaceLambda() {
 //        Caller.foo(interfaceInstanceLambda);
 //    }
 
     @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
-    @OutputTimeUnit(TimeUnit.NANOSECONDS)
     public void indyInterfaceImpl() {
         Caller.foo(interfaceInstanceImpl);
     }
 
     @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
-    @OutputTimeUnit(TimeUnit.NANOSECONDS)
     public void reflectClass() {
         Caller.reflectFoo(classInstance);
     }
 
     @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
-    @OutputTimeUnit(TimeUnit.NANOSECONDS)
     public void reflectChild() {
         Caller.reflectFoo(childInstance);
     }
 
     @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
-    @OutputTimeUnit(TimeUnit.NANOSECONDS)
     public void reflectInterfaceLambda() {
         Caller.reflectFoo(interfaceInstanceLambda);
     }
 
     @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
-    @OutputTimeUnit(TimeUnit.NANOSECONDS)
     public void reflectInterfaceImpl() {
         Caller.reflectFoo(interfaceInstanceImpl);
     }
 
     @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
-    @OutputTimeUnit(TimeUnit.NANOSECONDS)
     public void directClass() {
         classInstance.bar();
     }
 
     @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
-    @OutputTimeUnit(TimeUnit.NANOSECONDS)
     public void directChild() {
         childInstance.bar();
     }
 
     @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
-    @OutputTimeUnit(TimeUnit.NANOSECONDS)
     public void directInterfaceLambda() {
         interfaceInstanceLambda.bar();
     }
 
     @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
-    @OutputTimeUnit(TimeUnit.NANOSECONDS)
     public void directInterfaceImpl() {
         interfaceInstanceImpl.bar();
     }
