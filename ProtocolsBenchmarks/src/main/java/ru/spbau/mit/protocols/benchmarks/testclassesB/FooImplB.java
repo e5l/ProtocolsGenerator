@@ -1,11 +1,11 @@
-package ru.spbau.mit.protocols.benchmarks.testclasses;
+package ru.spbau.mit.protocols.benchmarks.testclassesB;
 
 import org.openjdk.jmh.infra.Blackhole;
 
-public class FooImpl implements FooInterface {
+public class FooImplB implements FooInterfaceB {
     private final Blackhole blackhole;
 
-    public FooImpl(final Blackhole blackhole) {
+    public FooImplB(final Blackhole blackhole) {
         this.blackhole = blackhole;
     }
 

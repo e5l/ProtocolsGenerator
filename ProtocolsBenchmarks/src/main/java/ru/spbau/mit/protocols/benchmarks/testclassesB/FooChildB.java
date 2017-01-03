@@ -1,10 +1,10 @@
-package ru.spbau.mit.protocols.benchmarks.testclasses;
+package ru.spbau.mit.protocols.benchmarks.testclassesB;
 
 import org.openjdk.jmh.infra.Blackhole;
 
-public class FooChild extends FooClass {
+public class FooChildB extends FooClassB {
 
-    public FooChild(Blackhole blackhole) {
+    public FooChildB(Blackhole blackhole) {
         super(blackhole);
     }
 

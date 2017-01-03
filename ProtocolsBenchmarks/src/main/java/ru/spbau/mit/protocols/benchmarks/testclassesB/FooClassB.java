@@ -1,11 +1,11 @@
-package ru.spbau.mit.protocols.benchmarks.testclasses;
+package ru.spbau.mit.protocols.benchmarks.testclassesB;
 
 import org.openjdk.jmh.infra.Blackhole;
 
-public class FooClass {
+public class FooClassB {
     protected final Blackhole blackhole;
 
-    public FooClass(final Blackhole blackhole) {
+    public FooClassB(final Blackhole blackhole) {
         this.blackhole = blackhole;
     }
 

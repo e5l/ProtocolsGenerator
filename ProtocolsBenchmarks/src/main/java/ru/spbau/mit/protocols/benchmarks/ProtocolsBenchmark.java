@@ -7,12 +7,11 @@ import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
-import ru.spbau.mit.protocols.benchmarks.testclasses.FooChild;
-import ru.spbau.mit.protocols.benchmarks.testclasses.FooClass;
-import ru.spbau.mit.protocols.benchmarks.testclasses.FooImpl;
-import ru.spbau.mit.protocols.benchmarks.testclasses.FooInterface;
+import ru.spbau.mit.protocols.benchmarks.testclassesA.FooChildA;
+import ru.spbau.mit.protocols.benchmarks.testclassesA.FooClassA;
+import ru.spbau.mit.protocols.benchmarks.testclassesA.FooImplA;
+import ru.spbau.mit.protocols.benchmarks.testclassesA.FooInterfaceA;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
@@ -20,17 +19,17 @@ import java.util.concurrent.TimeUnit;
 @State(Scope.Thread)
 public class ProtocolsBenchmark {
 
-    private FooClass classInstance;
-    private FooClass childInstance;
-    private FooInterface interfaceInstanceImpl;
-    private FooInterface interfaceInstanceLambda;
+    private FooClassA classInstance;
+    private FooClassA childInstance;
+    private FooInterfaceA interfaceInstanceImpl;
+    private FooInterfaceA interfaceInstanceLambda;
 
     @Setup
     public void setup(final Blackhole blackhole) {
-        classInstance = new FooClass(blackhole);
-        childInstance = new FooChild(blackhole);
+        classInstance = new FooClassA(blackhole);
+        childInstance = new FooChildA(blackhole);
         interfaceInstanceLambda = () -> blackhole.consume(42);
-        interfaceInstanceImpl = new FooImpl(blackhole);
+        interfaceInstanceImpl = new FooImplA(blackhole);
     }
 
     @Benchmark
