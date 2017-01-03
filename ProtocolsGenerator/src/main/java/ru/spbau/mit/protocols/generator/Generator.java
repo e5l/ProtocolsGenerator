@@ -1,7 +1,6 @@
-package ru.spbau.mit.protocols.attempt.second;
+package ru.spbau.mit.protocols.generator;
 
 import org.objectweb.asm.*;
-import ru.spbau.mit.protocols.attempt.first.ProtocolCallSite;
 
 import java.lang.invoke.*;
 import java.lang.reflect.Method;
@@ -12,18 +11,28 @@ import static me.qmx.jitescript.util.CodegenUtils.*;
 public class Generator {
     private static final int CODE_VERSION = 52;
 
-    public static Class<?> generateCallerClass(final int key) {
-        byte[] bytes = generateCaller(key);
+    /**
+     * Generate and and load class
+     *
+     * @return loaded class from generateCaller() method
+     */
+    public static Class<?> generateCallerClass() {
+        byte[] bytes = generateCaller();
 
         return new ClassLoader(ClassLoader.getSystemClassLoader()) {
-            public Class defineClass(String name, byte[] code) {
+            public Class defineClass(final String name, byte[] code) {
                 return super.defineClass(name, code, 0, code.length);
             }
         }.defineClass("Caller", bytes);
     }
 
-    public static byte[] generateCaller(final int key) {
-        final String callerPackage = "ru/spbau/mit/protocols/attempt/second/Caller";
+    /**
+     * Generate raw classfile with all available backends
+     *
+     * @return raw classfile
+     */
+    public static byte[] generateCaller() {
+        final String callerPackage = "caller/Caller";
         final ClassWriter writer = new ClassWriter(ClassWriter.COMPUTE_FRAMES);
 
         writer.visit(CODE_VERSION,
@@ -34,15 +43,20 @@ public class Generator {
                 null);
 
         writer.visitSource("Caller.java", null);
-        makeInit(writer, "Caller", key);
-        makeCaller(writer);
+        makeInit(writer);
+        makeMethodHandlerCaller(writer);
         makeReflectCaller(writer);
         writer.visitEnd();
 
         return writer.toByteArray();
     }
 
-    private static void makeCaller(final ClassWriter writer) {
+    /**
+     * Generate indy backend based on MethodHandle
+     *
+     * @param writer
+     */
+    private static void makeMethodHandlerCaller(final ClassWriter writer) {
         final MethodVisitor vMethod = writer.visitMethod(ACC_PUBLIC + ACC_STATIC, "foo", sig(void.class, Object.class), null, null);
         vMethod.visitCode();
 
@@ -70,6 +84,11 @@ public class Generator {
         vMethod.visitEnd();
     }
 
+    /**
+     * Generate reflective backend
+     *
+     * @param writer
+     */
     private static void makeReflectCaller(final ClassWriter writer) {
         final MethodVisitor vMethod = writer.visitMethod(ACC_PUBLIC + ACC_STATIC, "reflectFoo", sig(void.class, Object.class), null, null);
         vMethod.visitCode();
@@ -102,8 +121,12 @@ public class Generator {
         vMethod.visitEnd();
     }
 
-
-    private static void makeInit(final ClassWriter writer, final String name, final int key) {
+    /**
+     * Generate init method
+     *
+     * @param writer class writer
+     */
+    private static void makeInit(final ClassWriter writer) {
         final MethodVisitor vMethod = writer.visitMethod(ACC_PUBLIC, "<init>", sig(void.class), null, null);
         vMethod.visitCode();
 
@@ -115,7 +138,7 @@ public class Generator {
 
         final Label l1 = new Label();
         vMethod.visitLabel(l1);
-        vMethod.visitLocalVariable("this", String.format("Lself%s%d;", name, key), null, l0, l1, 0);
+        vMethod.visitLocalVariable("this", "Lself;", null, l0, l1, 0);
         vMethod.visitMaxs(0, 0);
         vMethod.visitEnd();
     }

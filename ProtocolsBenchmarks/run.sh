@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-filename=$(date +"%d%b%Y")
+filename=$(date +"%d%b%Y_%H:%M")
 
 
 ./gradlew jar

@@ -1,4 +1,4 @@
-package ru.spbau.mit.protocols.attempt.first;
+package ru.spbau.mit.protocols.generator;
 
 import java.lang.invoke.*;
 import java.lang.reflect.Method;
@@ -30,6 +30,7 @@ public class ProtocolCallSite {
     public Method getReflectMethod(Object receiver) throws NoSuchMethodException {
         Class<?> receiverClass = receiver.getClass();
         if (cache == null || cache != receiverClass) {
+            cache = receiverClass;
             reflectMethod = receiverClass.getDeclaredMethod(callableName, callableType.parameterArray());
         }
 

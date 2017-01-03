@@ -1,12 +1,11 @@
 package ru.spbau.mit.protocols.benchmarks;
 
+import caller.Caller;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
-
-import ru.spbau.mit.protocols.attempt.second.*;
 
 import java.util.concurrent.TimeUnit;
 
