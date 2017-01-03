@@ -1,0 +1,106 @@
+# JMH 1.16 (released 55 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.spbau.mit.protocols.benchmarks.SimpleBenchmark.simpleIndy
+
+# Run progress: 0.00% complete, ETA 00:01:20
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.IllegalAccessException: symbolic reference class is not public: class ru.spbau.mit.protocols.benchmarks.SimpleBenchmark$$Lambda$2/901524815, from caller.Caller
+	at java.lang.invoke.MemberName.makeAccessException(MemberName.java:850)
+	at java.lang.invoke.MethodHandles$Lookup.checkSymbolicClass(MethodHandles.java:1397)
+	at java.lang.invoke.MethodHandles$Lookup.resolveOrFail(MethodHandles.java:1377)
+	at java.lang.invoke.MethodHandles$Lookup.findVirtual(MethodHandles.java:859)
+	at ru.spbau.mit.protocols.generator.ProtocolCallSite.getMethod(ProtocolCallSite.java:25)
+	at caller.Caller.foo(Caller.java)
+	at ru.spbau.mit.protocols.benchmarks.SimpleBenchmark.simpleIndy(SimpleBenchmark.java:32)
+	at ru.spbau.mit.protocols.benchmarks.generated.SimpleBenchmark_simpleIndy_jmhTest.simpleIndy_avgt_jmhStub(SimpleBenchmark_simpleIndy_jmhTest.java:182)
+	at ru.spbau.mit.protocols.benchmarks.generated.SimpleBenchmark_simpleIndy_jmhTest.simpleIndy_AverageTime(SimpleBenchmark_simpleIndy_jmhTest.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:464)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:448)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.16 (released 55 days ago)
+# VM version: JDK 1.8.0_111, VM 25.111-b14
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.spbau.mit.protocols.benchmarks.SimpleBenchmark.simpleReflect
+
+# Run progress: 50.00% complete, ETA 00:00:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 159.706 ns/op
+# Warmup Iteration   2: 159.688 ns/op
+# Warmup Iteration   3: 157.381 ns/op
+# Warmup Iteration   4: 156.391 ns/op
+# Warmup Iteration   5: 155.774 ns/op
+# Warmup Iteration   6: 157.167 ns/op
+# Warmup Iteration   7: 156.067 ns/op
+# Warmup Iteration   8: 157.074 ns/op
+# Warmup Iteration   9: 156.274 ns/op
+# Warmup Iteration  10: 155.795 ns/op
+# Warmup Iteration  11: 156.190 ns/op
+# Warmup Iteration  12: 158.105 ns/op
+# Warmup Iteration  13: 156.996 ns/op
+# Warmup Iteration  14: 157.514 ns/op
+# Warmup Iteration  15: 156.549 ns/op
+# Warmup Iteration  16: 157.375 ns/op
+# Warmup Iteration  17: 160.413 ns/op
+# Warmup Iteration  18: 157.410 ns/op
+# Warmup Iteration  19: 156.913 ns/op
+# Warmup Iteration  20: 158.195 ns/op
+Iteration   1: 158.247 ns/op
+Iteration   2: 158.269 ns/op
+Iteration   3: 159.007 ns/op
+Iteration   4: 157.238 ns/op
+Iteration   5: 157.062 ns/op
+Iteration   6: 156.904 ns/op
+Iteration   7: 157.778 ns/op
+Iteration   8: 156.933 ns/op
+Iteration   9: 156.948 ns/op
+Iteration  10: 157.103 ns/op
+Iteration  11: 156.601 ns/op
+Iteration  12: 156.790 ns/op
+Iteration  13: 158.738 ns/op
+Iteration  14: 158.967 ns/op
+Iteration  15: 159.448 ns/op
+Iteration  16: 157.980 ns/op
+Iteration  17: 158.429 ns/op
+Iteration  18: 156.783 ns/op
+Iteration  19: 156.710 ns/op
+Iteration  20: 157.485 ns/op
+
+
+Result "simpleReflect":
+  157.671 ±(99.9%) 0.780 ns/op [Average]
+  (min, avg, max) = (156.601, 157.671, 159.448), stdev = 0.898
+  CI (99.9%): [156.891, 158.451] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:00:40
+
+Benchmark                      Mode  Cnt    Score   Error  Units
+SimpleBenchmark.simpleReflect  avgt   20  157.671 ± 0.780  ns/op

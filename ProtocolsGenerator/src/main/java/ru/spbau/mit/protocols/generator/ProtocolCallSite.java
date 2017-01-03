@@ -32,6 +32,7 @@ public class ProtocolCallSite {
         if (cache == null || cache != receiverClass) {
             cache = receiverClass;
             reflectMethod = receiverClass.getDeclaredMethod(callableName, callableType.parameterArray());
+            reflectMethod.setAccessible(true);
         }
 
         return reflectMethod;

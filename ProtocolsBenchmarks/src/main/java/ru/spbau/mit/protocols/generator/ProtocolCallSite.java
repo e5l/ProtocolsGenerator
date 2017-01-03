@@ -22,7 +22,8 @@ public class ProtocolCallSite {
         Class<?> receiverClass = receiver.getClass();
         if (cache == null || cache != receiverClass) {
             cache = receiverClass;
-            handle = lookup.findVirtual(receiver.getClass(), callableName, callableType).bindTo(receiver);
+            setupAccessible(receiverClass);
+            handle = lookup.findVirtual(receiverClass, callableName, callableType).bindTo(receiver);
         }
         return handle;
     }
@@ -31,7 +32,7 @@ public class ProtocolCallSite {
         Class<?> receiverClass = receiver.getClass();
         if (cache == null || cache != receiverClass) {
             cache = receiverClass;
-            reflectMethod = receiverClass.getDeclaredMethod(callableName, callableType.parameterArray());
+            reflectMethod = setupAccessible(receiverClass);
         }
 
         return reflectMethod;
@@ -40,5 +41,15 @@ public class ProtocolCallSite {
     public static CallSite getBootstrap(MethodHandles.Lookup lookup, String name, MethodType type, String callableName, MethodType callableType) {
         final ProtocolCallSite instance = new ProtocolCallSite(lookup, name, type, callableName, callableType);
         return new ConstantCallSite(MethodHandles.constant(ProtocolCallSite.class, instance));
+    }
+
+
+    public Method setupAccessible(final Class<?> cls) throws NoSuchMethodException {
+        final Method method = cls.getDeclaredMethod(callableName, callableType.parameterArray());
+        if (!method.isAccessible()) {
+            method.setAccessible(true);
+        }
+
+        return method;
     }
 }
