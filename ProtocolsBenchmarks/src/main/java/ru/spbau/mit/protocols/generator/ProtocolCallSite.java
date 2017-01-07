@@ -22,8 +22,8 @@ public class ProtocolCallSite {
         Class<?> receiverClass = receiver.getClass();
         if (cache == null || cache != receiverClass) {
             cache = receiverClass;
-            setupAccessible(receiverClass);
-            handle = lookup.findVirtual(receiverClass, callableName, callableType).bindTo(receiver);
+            final Method method = setupAccessible(receiverClass);
+            handle = lookup.unreflect(method);
         }
         return handle;
     }

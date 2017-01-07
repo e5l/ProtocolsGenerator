@@ -24,8 +24,7 @@ public class ProtocolsBenchmarkTest {
         Caller.foo(classInstance);
         Caller.foo(childInstance);
         Caller.foo(interfaceInstanceImpl);
-//        fail
-//        Caller.foo(interfaceInstanceLambda);
+        Caller.foo(interfaceInstanceLambda);
     }
 
     @Test

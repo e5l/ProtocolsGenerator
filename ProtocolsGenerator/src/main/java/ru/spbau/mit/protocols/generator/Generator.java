@@ -73,7 +73,8 @@ public class Generator {
 
         vMethod.visitVarInsn(ALOAD, 0);
         vMethod.visitMethodInsn(INVOKEVIRTUAL, p(ProtocolCallSite.class), "getMethod", sig(MethodHandle.class, Object.class), false);
-        vMethod.visitMethodInsn(INVOKEVIRTUAL, p(MethodHandle.class), "invokeExact", sig(void.class), false);
+        vMethod.visitVarInsn(ALOAD, 0);
+        vMethod.visitMethodInsn(INVOKEVIRTUAL, p(MethodHandle.class), "invoke", sig(void.class, Object.class), false);
 
         vMethod.visitInsn(RETURN);
         final Label l1 = new Label();
