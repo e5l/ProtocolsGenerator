@@ -42,10 +42,10 @@ public class ProtocolsBenchmark {
         Caller.foo(childInstance);
     }
 
-//    @Benchmark
-//    public void indyInterfaceLambda() {
-//        Caller.foo(interfaceInstanceLambda);
-//    }
+    @Benchmark
+    public void indyInterfaceLambda() {
+        Caller.foo(interfaceInstanceLambda);
+    }
 
     @Benchmark
     public void indyInterfaceImpl() {

@@ -68,12 +68,12 @@ public class ProtocolsBenchmarkBatches {
         }
     }
 
-//    @Benchmark
-//    public void indyInterfaceLambda() {
-//        for (Object instance : interfaceLambdaInstances) {
-//            Caller.foo(instance);
-//        }
-//    }
+    @Benchmark
+    public void indyInterfaceLambda() {
+        for (Object instance : interfaceLambdaInstances) {
+            Caller.foo(instance);
+        }
+    }
 
     @Benchmark
     public void indyInterfaceImpl() {
