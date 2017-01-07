@@ -19,7 +19,7 @@ dependencies {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'ru.spbau.mit.protocols.attempt.second.Application'
+        attributes 'Main-Class': 'ru.spbau.mit.protocols.benchmarks.ProtocolsBenchmark'
     }
 }
 
