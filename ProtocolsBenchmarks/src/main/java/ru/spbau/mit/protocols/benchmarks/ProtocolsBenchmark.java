@@ -3,6 +3,7 @@ package ru.spbau.mit.protocols.benchmarks;
 import caller.Caller;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.infra.Blackhole;
+import org.openjdk.jmh.profile.LinuxPerfAsmProfiler;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
@@ -91,17 +92,4 @@ public class ProtocolsBenchmark {
     public void directInterfaceImpl() {
         interfaceInstanceImpl.bar();
     }
-
-    public static void main(String[] args) throws RunnerException {
-        Options options = new OptionsBuilder()
-                .include(ProtocolsBenchmark.class.getSimpleName())
-                .warmupIterations(20)
-                .measurementIterations(20)
-                .forks(1)
-                .threads(1)
-                .build();
-
-        new Runner(options).run();
-    }
-
 }

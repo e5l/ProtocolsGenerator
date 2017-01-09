@@ -110,16 +110,4 @@ public class ProtocolsBenchmarkBatches {
         }
     }
 
-    public static void main(String[] args) throws RunnerException {
-        Options options = new OptionsBuilder()
-                .include(ProtocolsBenchmarkBatches.class.getSimpleName())
-                .warmupIterations(20)
-                .measurementIterations(20)
-                .forks(1)
-                .threads(1)
-                .build();
-
-        System.out.printf("Batch size: %d%n", BATCH_SIZE);
-        new Runner(options).run();
-    }
 }

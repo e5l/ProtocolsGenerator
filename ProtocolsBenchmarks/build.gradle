@@ -24,7 +24,7 @@ dependencies {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'ru.spbau.mit.protocols.benchmarks.ProtocolsBenchmark'
+        attributes 'Main-Class': 'ru.spbau.mit.protocols.benchmarks.BenchmarksExecutor'
     }
 
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
