@@ -1,2 +1,1 @@
-# ProtocolsGenerator
-protocols generator for jvm languages
+# Kotlin Protocols
