@@ -2,7 +2,7 @@
 
 ## Protocol tasks(compiler)
 1. fix: type erasure in implements case()
-1. reflection varargs
+1. reflection varargs pack
 1. caching
 1. tooling for tests
 1. generic types(subtyping)
