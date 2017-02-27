@@ -35,24 +35,34 @@ class Bar {
     operator fun set(a: Int, b: Int) = println(a + b)
 }
 
-fun bar(arg: Foo) {
-    println(arg::class.java)
-    println("Function: ")
-    println(arg.sum(10000, 200000))
-    println(arg.sum(10000, 200000))
+fun x(): Int = Math.random().toInt()
 
-    println("Operators: ")
-    println(arg + 1)
-    println(arg())
+fun bar(arg: Foo) {
+//    println(arg::class.java)
+//    println("Function: ")
+//    println(arg.sum(10000, 200000))
+    println(arg.sum(x() + 200000, 200000 + x()))
+//
+//    println("Operators: ")
+//    println(arg + 1)
+//    println(arg())
 //    arg[1] = 2
 //    println(arg[1]) TBD
+}
+
+fun Baaam(vararg a: Any?) {
 }
 
 fun main(args: Array<String>) {
     val baz = Baz()
     val bar = Bar()
     bar(baz)
-    bar(bar)
+    Baaam(1, 2, 3, 4, Int.javaClass)
+
+    val method = Baz::class.java.getMethod("sum", Int::class.java, Int::class.java)
+    val i: Int = method.invoke(baz, 1, 2) as Int
+    println(i)
+//    bar(bar)
 
 //    val x = (object : Foo {
 //        override fun sum(a: Int, b: Int): Int = 0
