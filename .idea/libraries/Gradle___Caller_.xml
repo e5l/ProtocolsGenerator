@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: :Caller:">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/ProtocolsBenchmarks/libs/Caller.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

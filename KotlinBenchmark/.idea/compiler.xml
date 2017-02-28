@@ -13,11 +13,5 @@
       <entry name="!?*.aj" />
       <entry name="!?*.ceylon" />
     </wildcardResourcePatterns>
-    <bytecodeTargetLevel>
-      <module name="ProtocolsBenchmarks_main" target="1.8" />
-      <module name="ProtocolsBenchmarks_test" target="1.8" />
-      <module name="ProtocolsGenerator_main" target="1.8" />
-      <module name="ProtocolsGenerator_test" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
