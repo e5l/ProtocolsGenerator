@@ -13,5 +13,8 @@
       <entry name="!?*.aj" />
       <entry name="!?*.ceylon" />
     </wildcardResourcePatterns>
+    <bytecodeTargetLevel>
+      <module name="Benchmarks" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
