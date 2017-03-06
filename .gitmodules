@@ -1,3 +1,6 @@
 [submodule "kotlin"]
 	path = kotlin
 	url = https://github.com/e5l/kotlin
+[submodule "doc/MasterDiploma"]
+	path = doc/MasterDiploma
+	url = git@github.com:e5l/MasterDiploma.git
