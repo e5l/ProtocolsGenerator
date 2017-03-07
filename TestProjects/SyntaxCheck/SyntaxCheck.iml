@@ -7,7 +7,7 @@
           <KotlinCompilerInfo>
             <option name="compilerSettings">
               <CompilerSettings>
-                <option name="additionalArguments" value="-protocols-backend reflection" />
+                <option name="additionalArguments" value="-protocols-backend indy" />
               </CompilerSettings>
             </option>
             <option name="k2jsCompilerArguments">

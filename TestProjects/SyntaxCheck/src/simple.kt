@@ -1,3 +1,4 @@
+package test
 
 protocol interface Foo {
     fun sum(a: Int, b: Int): Int
