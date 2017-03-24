@@ -1,10 +1,6 @@
 package ru.spbau.mit.kotlin.protocols.benchmarks
 
 import org.openjdk.jmh.annotations.*
-import ru.spbau.mit.kotlin.protocols.benchmarks.Foo
-import ru.spbau.mit.kotlin.protocols.benchmarks.FooImpl1
-import java.lang.invoke.MethodHandles
-import java.lang.invoke.MethodType
 import java.util.concurrent.TimeUnit
 
 @OutputTimeUnit(TimeUnit.NANOSECONDS)

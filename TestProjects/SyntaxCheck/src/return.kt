@@ -21,3 +21,4 @@ fun box(): String = id(Impl()).foo()
 fun main(str: Array<String>) {
     println(box())
 }
+
