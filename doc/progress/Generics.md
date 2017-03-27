@@ -9,10 +9,10 @@ Callsite ambiguous cases: we can have both types(Object or concrete, Object or P
 # Protocol has concrete type
 1. target method has Object(template) type
 
-Possible solutions:
-1. Try to find method and if exception was thrown, run overload resolution.
-2. Check if protocol class(at compile time) or target class(at runtime) has generic parameters, but we can't be sure. We can have method with generic parameters.
-3. Bruteforce: always run overload resolution
-
-# Design issues
+# Notes
 1. Protocol and matching class has different site variance
+
+# Issues
+1. Overload exists
+2. There is only one appropriate overload
+3. Typechecker

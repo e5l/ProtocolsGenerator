@@ -5,6 +5,8 @@ protocol interface PT<T> {
     fun x(t: T): T
 }
 
+class A
+
 class X {
     fun x() {}
     fun x(i: Int) = i
