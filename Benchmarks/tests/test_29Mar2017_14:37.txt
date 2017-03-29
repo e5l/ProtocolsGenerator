@@ -1,0 +1,619 @@
+INDY:
+# JMH 1.9.3 (released 684 days ago, please consider updating!)
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.spbau.mit.kotlin.protocols.benchmarks.SingleRun.args0
+
+# Run progress: 0.00% complete, ETA 00:06:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 11.759 ns/op
+# Warmup Iteration   2: 11.615 ns/op
+# Warmup Iteration   3: 11.246 ns/op
+# Warmup Iteration   4: 11.341 ns/op
+# Warmup Iteration   5: 11.362 ns/op
+# Warmup Iteration   6: 11.778 ns/op
+# Warmup Iteration   7: 11.343 ns/op
+# Warmup Iteration   8: 11.347 ns/op
+# Warmup Iteration   9: 11.540 ns/op
+# Warmup Iteration  10: 11.378 ns/op
+# Warmup Iteration  11: 11.436 ns/op
+# Warmup Iteration  12: 11.333 ns/op
+# Warmup Iteration  13: 11.406 ns/op
+# Warmup Iteration  14: 11.333 ns/op
+# Warmup Iteration  15: 11.305 ns/op
+# Warmup Iteration  16: 11.550 ns/op
+# Warmup Iteration  17: 11.297 ns/op
+# Warmup Iteration  18: 11.451 ns/op
+# Warmup Iteration  19: 11.280 ns/op
+# Warmup Iteration  20: 11.333 ns/op
+Iteration   1: 11.257 ns/op
+Iteration   2: 11.267 ns/op
+Iteration   3: 11.225 ns/op
+Iteration   4: 11.696 ns/op
+Iteration   5: 11.287 ns/op
+Iteration   6: 11.274 ns/op
+Iteration   7: 11.274 ns/op
+Iteration   8: 11.658 ns/op
+Iteration   9: 11.558 ns/op
+Iteration  10: 11.271 ns/op
+Iteration  11: 11.202 ns/op
+Iteration  12: 11.581 ns/op
+Iteration  13: 11.209 ns/op
+Iteration  14: 11.285 ns/op
+Iteration  15: 11.306 ns/op
+Iteration  16: 11.629 ns/op
+Iteration  17: 11.253 ns/op
+Iteration  18: 11.290 ns/op
+Iteration  19: 11.269 ns/op
+Iteration  20: 11.273 ns/op
+
+
+Result "args0":
+  11.353 ±(99.9%) 0.143 ns/op [Average]
+  (min, avg, max) = (11.202, 11.353, 11.696), stdev = 0.165
+  CI (99.9%): [11.210, 11.496] (assumes normal distribution)
+
+
+# JMH 1.9.3 (released 684 days ago, please consider updating!)
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.spbau.mit.kotlin.protocols.benchmarks.SingleRun.args1
+
+# Run progress: 11.11% complete, ETA 00:05:21
+# Fork: 1 of 1
+# Warmup Iteration   1: 11.707 ns/op
+# Warmup Iteration   2: 11.638 ns/op
+# Warmup Iteration   3: 11.272 ns/op
+# Warmup Iteration   4: 11.229 ns/op
+# Warmup Iteration   5: 11.336 ns/op
+# Warmup Iteration   6: 11.292 ns/op
+# Warmup Iteration   7: 11.303 ns/op
+# Warmup Iteration   8: 11.285 ns/op
+# Warmup Iteration   9: 11.269 ns/op
+# Warmup Iteration  10: 11.305 ns/op
+# Warmup Iteration  11: 11.265 ns/op
+# Warmup Iteration  12: 11.263 ns/op
+# Warmup Iteration  13: 11.389 ns/op
+# Warmup Iteration  14: 11.339 ns/op
+# Warmup Iteration  15: 11.279 ns/op
+# Warmup Iteration  16: 11.269 ns/op
+# Warmup Iteration  17: 11.291 ns/op
+# Warmup Iteration  18: 11.240 ns/op
+# Warmup Iteration  19: 11.253 ns/op
+# Warmup Iteration  20: 11.297 ns/op
+Iteration   1: 11.245 ns/op
+Iteration   2: 11.278 ns/op
+Iteration   3: 11.308 ns/op
+Iteration   4: 11.263 ns/op
+Iteration   5: 11.305 ns/op
+Iteration   6: 11.250 ns/op
+Iteration   7: 11.269 ns/op
+Iteration   8: 11.250 ns/op
+Iteration   9: 11.257 ns/op
+Iteration  10: 11.274 ns/op
+Iteration  11: 11.246 ns/op
+Iteration  12: 11.404 ns/op
+Iteration  13: 11.373 ns/op
+Iteration  14: 11.254 ns/op
+Iteration  15: 11.295 ns/op
+Iteration  16: 11.259 ns/op
+Iteration  17: 11.904 ns/op
+Iteration  18: 11.419 ns/op
+Iteration  19: 11.374 ns/op
+Iteration  20: 11.295 ns/op
+
+
+Result "args1":
+  11.326 ±(99.9%) 0.127 ns/op [Average]
+  (min, avg, max) = (11.245, 11.326, 11.904), stdev = 0.146
+  CI (99.9%): [11.199, 11.453] (assumes normal distribution)
+
+
+# JMH 1.9.3 (released 684 days ago, please consider updating!)
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.spbau.mit.kotlin.protocols.benchmarks.SingleRun.args10
+
+# Run progress: 22.22% complete, ETA 00:04:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 13.588 ns/op
+# Warmup Iteration   2: 14.170 ns/op
+# Warmup Iteration   3: 15.033 ns/op
+# Warmup Iteration   4: 13.140 ns/op
+# Warmup Iteration   5: 13.175 ns/op
+# Warmup Iteration   6: 13.152 ns/op
+# Warmup Iteration   7: 13.612 ns/op
+# Warmup Iteration   8: 13.148 ns/op
+# Warmup Iteration   9: 13.178 ns/op
+# Warmup Iteration  10: 13.138 ns/op
+# Warmup Iteration  11: 13.124 ns/op
+# Warmup Iteration  12: 13.224 ns/op
+# Warmup Iteration  13: 13.209 ns/op
+# Warmup Iteration  14: 13.160 ns/op
+# Warmup Iteration  15: 13.295 ns/op
+# Warmup Iteration  16: 13.133 ns/op
+# Warmup Iteration  17: 13.138 ns/op
+# Warmup Iteration  18: 13.179 ns/op
+# Warmup Iteration  19: 13.126 ns/op
+# Warmup Iteration  20: 13.199 ns/op
+Iteration   1: 13.172 ns/op
+Iteration   2: 13.124 ns/op
+Iteration   3: 13.266 ns/op
+Iteration   4: 13.127 ns/op
+Iteration   5: 13.206 ns/op
+Iteration   6: 13.146 ns/op
+Iteration   7: 13.734 ns/op
+Iteration   8: 13.811 ns/op
+Iteration   9: 13.870 ns/op
+Iteration  10: 13.938 ns/op
+Iteration  11: 13.835 ns/op
+Iteration  12: 13.921 ns/op
+Iteration  13: 14.030 ns/op
+Iteration  14: 13.996 ns/op
+Iteration  15: 13.949 ns/op
+Iteration  16: 14.001 ns/op
+Iteration  17: 13.913 ns/op
+Iteration  18: 13.926 ns/op
+Iteration  19: 13.375 ns/op
+Iteration  20: 13.134 ns/op
+
+
+Result "args10":
+  13.624 ±(99.9%) 0.321 ns/op [Average]
+  (min, avg, max) = (13.124, 13.624, 14.030), stdev = 0.370
+  CI (99.9%): [13.303, 13.945] (assumes normal distribution)
+
+
+# JMH 1.9.3 (released 684 days ago, please consider updating!)
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.spbau.mit.kotlin.protocols.benchmarks.SingleRun.args15
+
+# Run progress: 33.33% complete, ETA 00:04:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 17.605 ns/op
+# Warmup Iteration   2: 15.332 ns/op
+# Warmup Iteration   3: 14.591 ns/op
+# Warmup Iteration   4: 14.588 ns/op
+# Warmup Iteration   5: 14.903 ns/op
+# Warmup Iteration   6: 14.537 ns/op
+# Warmup Iteration   7: 14.603 ns/op
+# Warmup Iteration   8: 14.468 ns/op
+# Warmup Iteration   9: 14.770 ns/op
+# Warmup Iteration  10: 14.528 ns/op
+# Warmup Iteration  11: 14.678 ns/op
+# Warmup Iteration  12: 14.463 ns/op
+# Warmup Iteration  13: 14.558 ns/op
+# Warmup Iteration  14: 14.555 ns/op
+# Warmup Iteration  15: 14.546 ns/op
+# Warmup Iteration  16: 14.670 ns/op
+# Warmup Iteration  17: 14.711 ns/op
+# Warmup Iteration  18: 14.603 ns/op
+# Warmup Iteration  19: 14.641 ns/op
+# Warmup Iteration  20: 14.579 ns/op
+Iteration   1: 14.572 ns/op
+Iteration   2: 14.559 ns/op
+Iteration   3: 14.765 ns/op
+Iteration   4: 14.685 ns/op
+Iteration   5: 14.569 ns/op
+Iteration   6: 14.584 ns/op
+Iteration   7: 14.895 ns/op
+Iteration   8: 14.600 ns/op
+Iteration   9: 14.799 ns/op
+Iteration  10: 14.568 ns/op
+Iteration  11: 14.587 ns/op
+Iteration  12: 14.640 ns/op
+Iteration  13: 14.809 ns/op
+Iteration  14: 14.804 ns/op
+Iteration  15: 14.606 ns/op
+Iteration  16: 14.566 ns/op
+Iteration  17: 14.567 ns/op
+Iteration  18: 14.969 ns/op
+Iteration  19: 14.530 ns/op
+Iteration  20: 14.540 ns/op
+
+
+Result "args15":
+  14.661 ±(99.9%) 0.114 ns/op [Average]
+  (min, avg, max) = (14.530, 14.661, 14.969), stdev = 0.131
+  CI (99.9%): [14.547, 14.774] (assumes normal distribution)
+
+
+# JMH 1.9.3 (released 684 days ago, please consider updating!)
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.spbau.mit.kotlin.protocols.benchmarks.SingleRun.args2
+
+# Run progress: 44.44% complete, ETA 00:03:21
+# Fork: 1 of 1
+# Warmup Iteration   1: 11.820 ns/op
+# Warmup Iteration   2: 11.839 ns/op
+# Warmup Iteration   3: 11.488 ns/op
+# Warmup Iteration   4: 11.446 ns/op
+# Warmup Iteration   5: 11.432 ns/op
+# Warmup Iteration   6: 11.386 ns/op
+# Warmup Iteration   7: 11.391 ns/op
+# Warmup Iteration   8: 11.364 ns/op
+# Warmup Iteration   9: 11.410 ns/op
+# Warmup Iteration  10: 11.381 ns/op
+# Warmup Iteration  11: 11.434 ns/op
+# Warmup Iteration  12: 11.543 ns/op
+# Warmup Iteration  13: 11.452 ns/op
+# Warmup Iteration  14: 11.406 ns/op
+# Warmup Iteration  15: 12.020 ns/op
+# Warmup Iteration  16: 11.418 ns/op
+# Warmup Iteration  17: 11.403 ns/op
+# Warmup Iteration  18: 11.401 ns/op
+# Warmup Iteration  19: 11.462 ns/op
+# Warmup Iteration  20: 11.387 ns/op
+Iteration   1: 11.561 ns/op
+Iteration   2: 11.368 ns/op
+Iteration   3: 11.476 ns/op
+Iteration   4: 11.439 ns/op
+Iteration   5: 11.359 ns/op
+Iteration   6: 11.417 ns/op
+Iteration   7: 11.867 ns/op
+Iteration   8: 11.406 ns/op
+Iteration   9: 11.567 ns/op
+Iteration  10: 11.787 ns/op
+Iteration  11: 12.035 ns/op
+Iteration  12: 11.390 ns/op
+Iteration  13: 11.574 ns/op
+Iteration  14: 11.397 ns/op
+Iteration  15: 11.407 ns/op
+Iteration  16: 11.353 ns/op
+Iteration  17: 11.439 ns/op
+Iteration  18: 11.384 ns/op
+Iteration  19: 12.082 ns/op
+Iteration  20: 11.389 ns/op
+
+
+Result "args2":
+  11.535 ±(99.9%) 0.196 ns/op [Average]
+  (min, avg, max) = (11.353, 11.535, 12.082), stdev = 0.226
+  CI (99.9%): [11.339, 11.731] (assumes normal distribution)
+
+
+# JMH 1.9.3 (released 684 days ago, please consider updating!)
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.spbau.mit.kotlin.protocols.benchmarks.SingleRun.args20
+
+# Run progress: 55.56% complete, ETA 00:02:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 16.864 ns/op
+# Warmup Iteration   2: 16.405 ns/op
+# Warmup Iteration   3: 15.989 ns/op
+# Warmup Iteration   4: 15.754 ns/op
+# Warmup Iteration   5: 15.968 ns/op
+# Warmup Iteration   6: 15.784 ns/op
+# Warmup Iteration   7: 15.846 ns/op
+# Warmup Iteration   8: 15.740 ns/op
+# Warmup Iteration   9: 16.687 ns/op
+# Warmup Iteration  10: 15.690 ns/op
+# Warmup Iteration  11: 15.683 ns/op
+# Warmup Iteration  12: 15.701 ns/op
+# Warmup Iteration  13: 16.029 ns/op
+# Warmup Iteration  14: 15.813 ns/op
+# Warmup Iteration  15: 16.015 ns/op
+# Warmup Iteration  16: 15.779 ns/op
+# Warmup Iteration  17: 15.724 ns/op
+# Warmup Iteration  18: 15.694 ns/op
+# Warmup Iteration  19: 15.781 ns/op
+# Warmup Iteration  20: 15.754 ns/op
+Iteration   1: 15.692 ns/op
+Iteration   2: 15.668 ns/op
+Iteration   3: 15.813 ns/op
+Iteration   4: 15.709 ns/op
+Iteration   5: 15.732 ns/op
+Iteration   6: 15.684 ns/op
+Iteration   7: 15.693 ns/op
+Iteration   8: 15.691 ns/op
+Iteration   9: 15.696 ns/op
+Iteration  10: 15.682 ns/op
+Iteration  11: 15.893 ns/op
+Iteration  12: 15.658 ns/op
+Iteration  13: 15.800 ns/op
+Iteration  14: 15.683 ns/op
+Iteration  15: 15.580 ns/op
+Iteration  16: 15.684 ns/op
+Iteration  17: 15.680 ns/op
+Iteration  18: 15.752 ns/op
+Iteration  19: 17.364 ns/op
+Iteration  20: 15.674 ns/op
+
+
+Result "args20":
+  15.791 ±(99.9%) 0.326 ns/op [Average]
+  (min, avg, max) = (15.580, 15.791, 17.364), stdev = 0.376
+  CI (99.9%): [15.465, 16.118] (assumes normal distribution)
+
+
+# JMH 1.9.3 (released 684 days ago, please consider updating!)
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.spbau.mit.kotlin.protocols.benchmarks.SingleRun.args3
+
+# Run progress: 66.67% complete, ETA 00:02:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 11.992 ns/op
+# Warmup Iteration   2: 12.037 ns/op
+# Warmup Iteration   3: 11.528 ns/op
+# Warmup Iteration   4: 11.457 ns/op
+# Warmup Iteration   5: 11.475 ns/op
+# Warmup Iteration   6: 11.455 ns/op
+# Warmup Iteration   7: 11.454 ns/op
+# Warmup Iteration   8: 11.425 ns/op
+# Warmup Iteration   9: 11.559 ns/op
+# Warmup Iteration  10: 11.523 ns/op
+# Warmup Iteration  11: 11.478 ns/op
+# Warmup Iteration  12: 11.576 ns/op
+# Warmup Iteration  13: 11.471 ns/op
+# Warmup Iteration  14: 11.495 ns/op
+# Warmup Iteration  15: 11.444 ns/op
+# Warmup Iteration  16: 11.437 ns/op
+# Warmup Iteration  17: 11.473 ns/op
+# Warmup Iteration  18: 11.446 ns/op
+# Warmup Iteration  19: 11.585 ns/op
+# Warmup Iteration  20: 11.429 ns/op
+Iteration   1: 11.471 ns/op
+Iteration   2: 11.521 ns/op
+Iteration   3: 11.632 ns/op
+Iteration   4: 11.516 ns/op
+Iteration   5: 11.446 ns/op
+Iteration   6: 11.452 ns/op
+Iteration   7: 11.448 ns/op
+Iteration   8: 11.451 ns/op
+Iteration   9: 11.484 ns/op
+Iteration  10: 11.428 ns/op
+Iteration  11: 11.422 ns/op
+Iteration  12: 11.497 ns/op
+Iteration  13: 11.468 ns/op
+Iteration  14: 11.507 ns/op
+Iteration  15: 11.466 ns/op
+Iteration  16: 11.443 ns/op
+Iteration  17: 11.468 ns/op
+Iteration  18: 11.514 ns/op
+Iteration  19: 11.491 ns/op
+Iteration  20: 11.450 ns/op
+
+
+Result "args3":
+  11.479 ±(99.9%) 0.040 ns/op [Average]
+  (min, avg, max) = (11.422, 11.479, 11.632), stdev = 0.047
+  CI (99.9%): [11.438, 11.519] (assumes normal distribution)
+
+
+# JMH 1.9.3 (released 684 days ago, please consider updating!)
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.spbau.mit.kotlin.protocols.benchmarks.SingleRun.args4
+
+# Run progress: 77.78% complete, ETA 00:01:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 12.189 ns/op
+# Warmup Iteration   2: 12.162 ns/op
+# Warmup Iteration   3: 11.598 ns/op
+# Warmup Iteration   4: 11.624 ns/op
+# Warmup Iteration   5: 11.610 ns/op
+# Warmup Iteration   6: 11.585 ns/op
+# Warmup Iteration   7: 11.558 ns/op
+# Warmup Iteration   8: 11.583 ns/op
+# Warmup Iteration   9: 11.644 ns/op
+# Warmup Iteration  10: 11.599 ns/op
+# Warmup Iteration  11: 11.638 ns/op
+# Warmup Iteration  12: 11.792 ns/op
+# Warmup Iteration  13: 11.599 ns/op
+# Warmup Iteration  14: 11.585 ns/op
+# Warmup Iteration  15: 11.569 ns/op
+# Warmup Iteration  16: 11.572 ns/op
+# Warmup Iteration  17: 11.608 ns/op
+# Warmup Iteration  18: 11.571 ns/op
+# Warmup Iteration  19: 11.649 ns/op
+# Warmup Iteration  20: 11.583 ns/op
+Iteration   1: 11.585 ns/op
+Iteration   2: 11.688 ns/op
+Iteration   3: 11.645 ns/op
+Iteration   4: 11.592 ns/op
+Iteration   5: 11.608 ns/op
+Iteration   6: 11.640 ns/op
+Iteration   7: 12.184 ns/op
+Iteration   8: 12.228 ns/op
+Iteration   9: 12.156 ns/op
+Iteration  10: 12.016 ns/op
+Iteration  11: 11.625 ns/op
+Iteration  12: 11.715 ns/op
+Iteration  13: 11.583 ns/op
+Iteration  14: 11.621 ns/op
+Iteration  15: 11.596 ns/op
+Iteration  16: 11.585 ns/op
+Iteration  17: 11.579 ns/op
+Iteration  18: 11.560 ns/op
+Iteration  19: 11.639 ns/op
+Iteration  20: 11.566 ns/op
+
+
+Result "args4":
+  11.721 ±(99.9%) 0.195 ns/op [Average]
+  (min, avg, max) = (11.560, 11.721, 12.228), stdev = 0.224
+  CI (99.9%): [11.526, 11.916] (assumes normal distribution)
+
+
+# JMH 1.9.3 (released 684 days ago, please consider updating!)
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.spbau.mit.kotlin.protocols.benchmarks.SingleRun.args5
+
+# Run progress: 88.89% complete, ETA 00:00:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 12.408 ns/op
+# Warmup Iteration   2: 12.401 ns/op
+# Warmup Iteration   3: 11.751 ns/op
+# Warmup Iteration   4: 11.751 ns/op
+# Warmup Iteration   5: 11.738 ns/op
+# Warmup Iteration   6: 11.704 ns/op
+# Warmup Iteration   7: 12.023 ns/op
+# Warmup Iteration   8: 11.748 ns/op
+# Warmup Iteration   9: 11.728 ns/op
+# Warmup Iteration  10: 11.735 ns/op
+# Warmup Iteration  11: 11.805 ns/op
+# Warmup Iteration  12: 11.852 ns/op
+# Warmup Iteration  13: 11.758 ns/op
+# Warmup Iteration  14: 11.959 ns/op
+# Warmup Iteration  15: 11.731 ns/op
+# Warmup Iteration  16: 11.727 ns/op
+# Warmup Iteration  17: 11.774 ns/op
+# Warmup Iteration  18: 11.784 ns/op
+# Warmup Iteration  19: 11.720 ns/op
+# Warmup Iteration  20: 11.714 ns/op
+Iteration   1: 11.734 ns/op
+Iteration   2: 11.791 ns/op
+Iteration   3: 11.750 ns/op
+Iteration   4: 11.762 ns/op
+Iteration   5: 11.724 ns/op
+Iteration   6: 11.738 ns/op
+Iteration   7: 11.737 ns/op
+Iteration   8: 11.823 ns/op
+Iteration   9: 11.753 ns/op
+Iteration  10: 11.916 ns/op
+Iteration  11: 12.118 ns/op
+Iteration  12: 11.948 ns/op
+Iteration  13: 12.099 ns/op
+Iteration  14: 11.745 ns/op
+Iteration  15: 11.731 ns/op
+Iteration  16: 11.742 ns/op
+Iteration  17: 11.828 ns/op
+Iteration  18: 11.786 ns/op
+Iteration  19: 11.763 ns/op
+Iteration  20: 11.753 ns/op
+
+
+Result "args5":
+  11.812 ±(99.9%) 0.102 ns/op [Average]
+  (min, avg, max) = (11.724, 11.812, 12.118), stdev = 0.118
+  CI (99.9%): [11.710, 11.914] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:06:01
+
+Benchmark         Mode  Cnt   Score   Error  Units
+SingleRun.args0   avgt   20  11.353 ± 0.143  ns/op
+SingleRun.args1   avgt   20  11.326 ± 0.127  ns/op
+SingleRun.args10  avgt   20  13.624 ± 0.321  ns/op
+SingleRun.args15  avgt   20  14.661 ± 0.114  ns/op
+SingleRun.args2   avgt   20  11.535 ± 0.196  ns/op
+SingleRun.args20  avgt   20  15.791 ± 0.326  ns/op
+SingleRun.args3   avgt   20  11.479 ± 0.040  ns/op
+SingleRun.args4   avgt   20  11.721 ± 0.195  ns/op
+SingleRun.args5   avgt   20  11.812 ± 0.102  ns/op
+# JMH 1.9.3 (released 684 days ago, please consider updating!)
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.spbau.mit.kotlin.protocols.benchmarks.MultiTarget.test
+
+# Run progress: 0.00% complete, ETA 00:00:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 575725.072 ns/op
+# Warmup Iteration   2: 474145.810 ns/op
+# Warmup Iteration   3: 442823.530 ns/op
+# Warmup Iteration   4: 478296.577 ns/op
+# Warmup Iteration   5: 431799.294 ns/op
+# Warmup Iteration   6: 447615.150 ns/op
+# Warmup Iteration   7: 472235.740 ns/op
+# Warmup Iteration   8: 429786.958 ns/op
+# Warmup Iteration   9: 448818.769 ns/op
+# Warmup Iteration  10: 425109.365 ns/op
+# Warmup Iteration  11: 455713.036 ns/op
+# Warmup Iteration  12: 455980.348 ns/op
+# Warmup Iteration  13: 444575.881 ns/op
+# Warmup Iteration  14: 453668.275 ns/op
+# Warmup Iteration  15: 473924.327 ns/op
+# Warmup Iteration  16: 450032.307 ns/op
+# Warmup Iteration  17: 448649.724 ns/op
+# Warmup Iteration  18: 425929.422 ns/op
+# Warmup Iteration  19: 450330.786 ns/op
+# Warmup Iteration  20: 421915.241 ns/op
+Iteration   1: 463881.761 ns/op
+Iteration   2: 457129.188 ns/op
+Iteration   3: 454485.366 ns/op
+Iteration   4: 480715.852 ns/op
+Iteration   5: 422927.198 ns/op
+Iteration   6: 473699.871 ns/op
+Iteration   7: 456735.066 ns/op
+Iteration   8: 433762.530 ns/op
+Iteration   9: 457562.663 ns/op
+Iteration  10: 422623.017 ns/op
+Iteration  11: 453734.756 ns/op
+Iteration  12: 464597.930 ns/op
+Iteration  13: 420962.762 ns/op
+Iteration  14: 454345.719 ns/op
+Iteration  15: 419017.855 ns/op
+Iteration  16: 460156.315 ns/op
+Iteration  17: 459929.723 ns/op
+Iteration  18: 419254.173 ns/op
+Iteration  19: 459343.553 ns/op
+Iteration  20: 418277.050 ns/op
+
+
+Result "test":
+  447657.117 ±(99.9%) 17591.161 ns/op [Average]
+  (min, avg, max) = (418277.050, 447657.117, 480715.852), stdev = 20258.007
+  CI (99.9%): [430065.956, 465248.278] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:00:40
+
+Benchmark         Mode  Cnt       Score       Error  Units
+MultiTarget.test  avgt   20  447657.117 ± 17591.161  ns/op
+
+REFLECTION:
