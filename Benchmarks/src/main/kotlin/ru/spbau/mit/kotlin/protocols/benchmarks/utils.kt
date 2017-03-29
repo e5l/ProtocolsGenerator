@@ -7,16 +7,13 @@ fun <T> MutableList<T>.permute() {
         return
     }
 
-    var i = 1
     val random = Random()
-
-    while (i < size) {
+    for (i in 1..size - 1) {
         val j = random.nextInt(i + 1)
         val tmp = get(i)
 
         set(i, get(j))
         set(j, tmp)
-        ++i
     }
 }
 
