@@ -15,13 +15,15 @@ class X {
 
 fun main(args: Array<String>) {
 
-    val obj2: PT<Int?> = X()
-    if (obj2.x(42) != 84) {
-        println("Fail")
-    }
+//    val obj2: PT<Int?> = X()
+//    if (obj2.x(42) != 84) {
+//        println("Fail")
+//    }
 
     val obj: PT<Int> = X()
-    if (obj.x(42) != 42) {
-        println("Fail")
-    }
+    println(obj.x(42))
+
+//    if (obj.x(42) != 42) {
+//        println("Fail")
+//    }
 }
