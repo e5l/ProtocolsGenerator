@@ -41,7 +41,7 @@ open class MultiTarget {
 
     @Benchmark
     fun test() {
-        for (i in testData) {
+        for (i: Bar in testData) {
             i.foo()
         }
     }
