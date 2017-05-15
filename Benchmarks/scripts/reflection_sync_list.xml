@@ -137,6 +137,8 @@ THE POSSIBILITY OF SUCH DAMAGE.
                     <args>
                         <arg>-protocols-backend</arg>
                         <arg>reflection</arg>
+                        <arg>-protocols-cache</arg>
+                        <arg>sync_list</arg>
                     </args>
                 </configuration>
             </plugin>
