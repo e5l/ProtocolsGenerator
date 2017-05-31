@@ -1,0 +1,271 @@
+[START] ./*_list.xml
+# JMH 1.18 (released 78 days ago)
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.spbau.mit.kotlin.protocols.benchmarks.MergeSort.testImplicit10
+
+# Run progress: 0.00% complete, ETA 00:02:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.674 us/op
+# Warmup Iteration   2: 0.634 us/op
+# Warmup Iteration   3: 0.616 us/op
+# Warmup Iteration   4: [DONE] ./*_list.xml
+[START] ./indy_array.xml
+# JMH 1.18 (released 78 days ago)
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.spbau.mit.kotlin.protocols.benchmarks.MergeSort.testImplicit10
+
+# Run progress: 0.00% complete, ETA 00:02:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.682 us/op
+# Warmup Iteration   2: 0.616 us/op
+# Warmup Iteration   3: 0.604 us/op
+# Warmup Iteration   4: 0.616 us/op
+# Warmup Iteration   5: 0.604 us/op
+# Warmup Iteration   6: 0.605 us/op
+# Warmup Iteration   7: 0.602 us/op
+# Warmup Iteration   8: 0.602 us/op
+# Warmup Iteration   9: 0.605 us/op
+# Warmup Iteration  10: 0.609 us/op
+# Warmup Iteration  11: 0.603 us/op
+# Warmup Iteration  12: 0.600 us/op
+# Warmup Iteration  13: 0.602 us/op
+# Warmup Iteration  14: 0.601 us/op
+# Warmup Iteration  15: 0.608 us/op
+# Warmup Iteration  16: 0.602 us/op
+# Warmup Iteration  17: 0.607 us/op
+# Warmup Iteration  18: 0.602 us/op
+# Warmup Iteration  19: 0.600 us/op
+# Warmup Iteration  20: 0.608 us/op
+Iteration   1: 0.601 us/op
+Iteration   2: 0.602 us/op
+Iteration   3: 0.600 us/op
+Iteration   4: 0.604 us/op
+Iteration   5: 0.609 us/op
+Iteration   6: 0.602 us/op
+Iteration   7: 0.604 us/op
+Iteration   8: 0.604 us/op
+Iteration   9: 0.604 us/op
+Iteration  10: 0.603 us/op
+Iteration  11: 0.607 us/op
+Iteration  12: 0.607 us/op
+Iteration  13: 0.603 us/op
+Iteration  14: 0.604 us/op
+Iteration  15: 0.614 us/op
+Iteration  16: 0.602 us/op
+Iteration  17: 0.605 us/op
+Iteration  18: 0.605 us/op
+Iteration  19: 0.602 us/op
+Iteration  20: 0.605 us/op
+
+
+Result "ru.spbau.mit.kotlin.protocols.benchmarks.MergeSort.testImplicit10":
+  0.604 ±(99.9%) 0.003 us/op [Average]
+  (min, avg, max) = (0.600, 0.604, 0.614), stdev = 0.003
+  CI (99.9%): [0.602, 0.607] (assumes normal distribution)
+
+
+# JMH 1.18 (released 78 days ago)
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.spbau.mit.kotlin.protocols.benchmarks.MergeSort.testImplicit100
+
+# Run progress: 25.00% complete, ETA 00:02:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 10.991 us/op
+# Warmup Iteration   2: 10.447 us/op
+# Warmup Iteration   3: 10.488 us/op
+# Warmup Iteration   4: 10.177 us/op
+# Warmup Iteration   5: 10.259 us/op
+# Warmup Iteration   6: 10.675 us/op
+# Warmup Iteration   7: 10.196 us/op
+# Warmup Iteration   8: 10.246 us/op
+# Warmup Iteration   9: 10.187 us/op
+# Warmup Iteration  10: 10.211 us/op
+# Warmup Iteration  11: 10.201 us/op
+# Warmup Iteration  12: 10.211 us/op
+# Warmup Iteration  13: 10.156 us/op
+# Warmup Iteration  14: 10.220 us/op
+# Warmup Iteration  15: 10.254 us/op
+# Warmup Iteration  16: 10.165 us/op
+# Warmup Iteration  17: 10.186 us/op
+# Warmup Iteration  18: 10.241 us/op
+# Warmup Iteration  19: 10.257 us/op
+# Warmup Iteration  20: 10.199 us/op
+Iteration   1: 10.197 us/op
+Iteration   2: 10.204 us/op
+Iteration   3: 10.175 us/op
+Iteration   4: 10.207 us/op
+Iteration   5: 10.228 us/op
+Iteration   6: 10.228 us/op
+Iteration   7: 10.215 us/op
+Iteration   8: 10.192 us/op
+Iteration   9: 10.226 us/op
+Iteration  10: 10.202 us/op
+Iteration  11: 10.332 us/op
+Iteration  12: 10.257 us/op
+Iteration  13: 10.230 us/op
+Iteration  14: 10.185 us/op
+Iteration  15: 10.267 us/op
+Iteration  16: 10.221 us/op
+Iteration  17: 10.220 us/op
+Iteration  18: 10.220 us/op
+Iteration  19: 10.207 us/op
+Iteration  20: 10.214 us/op
+
+
+Result "ru.spbau.mit.kotlin.protocols.benchmarks.MergeSort.testImplicit100":
+  10.221 ±(99.9%) 0.029 us/op [Average]
+  (min, avg, max) = (10.175, 10.221, 10.332), stdev = 0.034
+  CI (99.9%): [10.192, 10.251] (assumes normal distribution)
+
+
+# JMH 1.18 (released 78 days ago)
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.spbau.mit.kotlin.protocols.benchmarks.MergeSort.testImplicit1000
+
+# Run progress: 50.00% complete, ETA 00:01:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 139.547 us/op
+# Warmup Iteration   2: 132.084 us/op
+# Warmup Iteration   3: 132.389 us/op
+# Warmup Iteration   4: 130.221 us/op
+# Warmup Iteration   5: 133.776 us/op
+# Warmup Iteration   6: 131.251 us/op
+# Warmup Iteration   7: 129.669 us/op
+# Warmup Iteration   8: 130.384 us/op
+# Warmup Iteration   9: 129.570 us/op
+# Warmup Iteration  10: 129.371 us/op
+# Warmup Iteration  11: 130.151 us/op
+# Warmup Iteration  12: 130.069 us/op
+# Warmup Iteration  13: 130.049 us/op
+# Warmup Iteration  14: 129.895 us/op
+# Warmup Iteration  15: 130.841 us/op
+# Warmup Iteration  16: 129.918 us/op
+# Warmup Iteration  17: 129.840 us/op
+# Warmup Iteration  18: 130.116 us/op
+# Warmup Iteration  19: 129.954 us/op
+# Warmup Iteration  20: 130.018 us/op
+Iteration   1: 129.912 us/op
+Iteration   2: 129.834 us/op
+Iteration   3: 129.785 us/op
+Iteration   4: 129.818 us/op
+Iteration   5: 130.515 us/op
+Iteration   6: 129.843 us/op
+Iteration   7: 130.870 us/op
+Iteration   8: 131.766 us/op
+Iteration   9: 130.665 us/op
+Iteration  10: 129.887 us/op
+Iteration  11: 130.025 us/op
+Iteration  12: 130.217 us/op
+Iteration  13: 129.863 us/op
+Iteration  14: 130.483 us/op
+Iteration  15: 131.020 us/op
+Iteration  16: 130.048 us/op
+Iteration  17: 131.188 us/op
+Iteration  18: 130.509 us/op
+Iteration  19: 130.034 us/op
+Iteration  20: 130.353 us/op
+
+
+Result "ru.spbau.mit.kotlin.protocols.benchmarks.MergeSort.testImplicit1000":
+  130.332 ±(99.9%) 0.474 us/op [Average]
+  (min, avg, max) = (129.785, 130.332, 131.766), stdev = 0.546
+  CI (99.9%): [129.857, 130.806] (assumes normal distribution)
+
+
+# JMH 1.18 (released 78 days ago)
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.spbau.mit.kotlin.protocols.benchmarks.MergeSort.testImplicit10000
+
+# Run progress: 75.00% complete, ETA 00:00:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 1708.285 us/op
+# Warmup Iteration   2: 1561.891 us/op
+# Warmup Iteration   3: 1572.754 us/op
+# Warmup Iteration   4: 1534.841 us/op
+# Warmup Iteration   5: 1576.270 us/op
+# Warmup Iteration   6: 1526.363 us/op
+# Warmup Iteration   7: 1529.989 us/op
+# Warmup Iteration   8: 1519.827 us/op
+# Warmup Iteration   9: 1511.021 us/op
+# Warmup Iteration  10: 1512.769 us/op
+# Warmup Iteration  11: 1514.676 us/op
+# Warmup Iteration  12: 1510.977 us/op
+# Warmup Iteration  13: 1514.391 us/op
+# Warmup Iteration  14: 1514.971 us/op
+# Warmup Iteration  15: 1504.829 us/op
+# Warmup Iteration  16: 1521.192 us/op
+# Warmup Iteration  17: 1505.868 us/op
+# Warmup Iteration  18: 1509.608 us/op
+# Warmup Iteration  19: 1510.100 us/op
+# Warmup Iteration  20: 1502.154 us/op
+Iteration   1: 1501.199 us/op
+Iteration   2: 1516.961 us/op
+Iteration   3: 1512.254 us/op
+Iteration   4: 1511.039 us/op
+Iteration   5: 1511.902 us/op
+Iteration   6: 1506.129 us/op
+Iteration   7: 1505.685 us/op
+Iteration   8: 1506.989 us/op
+Iteration   9: 1509.453 us/op
+Iteration  10: 1503.625 us/op
+Iteration  11: 1515.775 us/op
+Iteration  12: 1512.313 us/op
+Iteration  13: 1510.524 us/op
+Iteration  14: 1520.925 us/op
+Iteration  15: 1520.767 us/op
+Iteration  16: 1513.249 us/op
+Iteration  17: 1519.846 us/op
+Iteration  18: 1511.496 us/op
+Iteration  19: 1500.538 us/op
+Iteration  20: 1513.217 us/op
+
+
+Result "ru.spbau.mit.kotlin.protocols.benchmarks.MergeSort.testImplicit10000":
+  1511.194 ±(99.9%) 5.174 us/op [Average]
+  (min, avg, max) = (1500.538, 1511.194, 1520.925), stdev = 5.959
+  CI (99.9%): [1506.020, 1516.369] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:02:41
+
+Benchmark                    Mode  Cnt     Score   Error  Units
+MergeSort.testImplicit10     avgt   20     0.604 ± 0.003  us/op
+MergeSort.testImplicit100    avgt   20    10.221 ± 0.029  us/op
+MergeSort.testImplicit1000   avgt   20   130.332 ± 0.474  us/op
+MergeSort.testImplicit10000  avgt   20  1511.194 ± 5.174  us/op
+[DONE] ./indy_array.xml

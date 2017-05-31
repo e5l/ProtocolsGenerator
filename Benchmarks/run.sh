@@ -12,8 +12,6 @@ do
     echo "[START] $file" 
     echo "[START] $file"  >> $path
     mvn -q -f $file clean install
-    java -jar target/benchmarks.jar SingleRun.* -wi 20 -i 20 -f 1 -t 1 >> $path
-    java -jar target/benchmarks.jar MultiTarget.* -wi 20 -i 20 -f 1 -t 1 >> $path
     java -jar target/benchmarks.jar MergeSort.* -wi 20 -i 20 -f 1 -t 1 >> $path
     echo "[DONE] $file"  >> $path
     echo "[DONE] $file"

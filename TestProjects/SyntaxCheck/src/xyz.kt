@@ -4,16 +4,16 @@
 package hello
 
 protocol interface X {
-    fun foo(): String
+    fun foo(): Int
 }
 
-open class B {
-    fun foo() = "OK"
+class B {
+    fun foo(): Int = 42
 }
 
-class A : X by B()
+fun run0(f: X): Int = f.foo()
 
 fun main(args: Array<String>) {
-    val x: X = A()
-    println(x.foo())
+    val x: X = B()
+    println(run0(x))
 }
